@@ -1,0 +1,50 @@
+{
+  "name": "@vdaluz/astro-opt-in-newsletter",
+  "version": "0.1.0",
+  "description": "Consent-first newsletter signup for Astro on Cloudflare Workers: a fail-closed subscribe handler for Listmonk-style public subscription endpoints and an accessible form behaviour, with no tracking and no popups.",
+  "keywords": [
+    "astro",
+    "astro-component",
+    "newsletter",
+    "email-signup",
+    "listmonk",
+    "cloudflare-workers",
+    "privacy",
+    "accessibility"
+  ],
+  "homepage": "https://github.com/vdaluz/astro-opt-in-newsletter#readme",
+  "bugs": {
+    "url": "https://github.com/vdaluz/astro-opt-in-newsletter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdaluz/astro-opt-in-newsletter.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "check": "astro check",
+    "test": "node --test"
+  },
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./handler": "./src/lib/handler.ts",
+    "./client": "./src/lib/client.ts"
+  },
+  "peerDependencies": {
+    "astro": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/node": "^26.1.1",
+    "astro": "^7.3.2",
+    "typescript": "^6.0.3"
+  }
+}
