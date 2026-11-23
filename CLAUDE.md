@@ -2,7 +2,7 @@
 
 ## What this repo is
 
-`@vdaluz/astro-opt-in-newsletter`: the newsletter signup shared by the vdaluz.com-family sites. A fail-closed subscribe handler for Listmonk-style public subscription endpoints, plus the form behaviour; each site keeps its own markup. Consumed as an npm-registry semver pin by the sites in the README's Consumers section; tracked in Plane under the AST project. Created by AST-124 to replace six diverged per-site copies.
+`@vdaluz/astro-opt-in-newsletter`: the newsletter signup shared by the vdaluz.com-family sites. A fail-closed subscribe handler for Listmonk-style public subscription endpoints, plus the form behaviour; each site keeps its own markup. Consumed as an npm-registry semver pin by the sites in the README's Consumers section; tracked in OPM under the AST project. Created by AST-124 to replace six diverged per-site copies.
 
 ## Commands
 
@@ -15,9 +15,9 @@ npm test        # node --test
 
 Shared preamble: `.claude/rules/git-workflow-direct-to-main.md`.
 
-## Plane (AST project)
+## Issue tracking (AST project)
 
-Project ID, state UUIDs, and label UUIDs: **`.claude/plane.yml`**.
+Issues live in OPM (`mcp__opm__*` tools). `.claude/plane.yml` supplies only the project key (`project_identifier`); its UUIDs are Plane's, so never pass them to an OPM tool. Resolve OPM IDs at run time per `~/.claude/skills/_shared/opm-reference.md`.
 
 ## Conventions
 
